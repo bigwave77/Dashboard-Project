@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+input, button {
+    appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input {
+    background-color:rgb(226, 232, 240);
+    border: none;
+    flex: 1;
+    height: 1.7rem;
+    border-radius: 20px;
+}
+
+p {
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template: 18vh 82vh / 1fr 4fr;
+}
+
+.sidebar {
+    color: white;
+    display: grid;
+    font-size: 1.3rem;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: 100px 40px 40px 40px 40px 40px 40px 100px 40px 40px;
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+    background-color: rgb(66, 155, 214);
+}
+
+.sidebar .icon {
+    align-self: center;
+    justify-self: center;
+    stroke: white;
+}
+
+.sidebar div {
+    grid-column: 2 / 3;
+    align-self: center;
+}
+
+.header {
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-shadow: 0 1px rgb(39, 39, 39);
+}
+
+.search, .profile{
+    display: flex;
+}
+
+.search {
+    padding-right: 60px;
+    align-items: center;
+    gap: 20px;
+}
+
+.bar {
+    display: flex;
+    flex: 1;
+}
+
+.icon {
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+.icon.large {
+    height: 3rem;
+    width: 3rem;
+}
+
+.dashboard {
+    font-size: 2rem;
+}
+
+.profile {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.image {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 40px;
+}
+
+.welcome {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: .9rem 1fr;
+    column-gap: 20px;
+    align-items: start;
+}
+
+.welcome img {
+    grid-row: 1 / 3;
+}
+
+.welcome .hi {
+    font-size: .9rem;
+    padding-top: 10px;
+}
+
+.hi.big {
+    font-size: 1.6rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.buttons button {
+    background-color: rgb(66, 155, 214);
+    color: white;
+    flex: 1;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 2.3rem;
+}
+
+.image.large {
+    height: 4rem;
+    width: 4rem;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+}
+
+.main-content button {
+    background-color: white;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(226, 232, 240);
+    display: grid;
+    grid-template-columns: 2fr .8fr;
+    grid-template-rows: 70px 1fr 70px 1fr;
+    padding-left: 20px;
+}
+
+.title {
+    padding-top: 35px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-row: 2 / span 3;
+    column-gap: 30px;
+    padding-right: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(180, 180, 180);
+    border-left: 6px solid orange;
+    padding: 35px 10px 20px 20px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    height: 60%;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+
+.announce {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(180, 180, 180);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 70%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: .8rem;
+}
+
+.section .title {
+    padding-top: 9%;
+    font-size: .9rem;
+}
+
+.section {
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section p {
+    padding-top: 1%;
+    margin-bottom: 2%;
+}
+
+.trending {
+    column-gap: 1.5rem;
+    height: 29.3vh;
+    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr;
+}
+
+.details div {
+    font-size: .9rem;
+}
+
+.at {
+    font-weight: 600;
+}
+
+.description {
+    font-weight: 300;
+}
